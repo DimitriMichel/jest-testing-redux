@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducers from './redux/reducers';
+import Root from 'Root';
 import './sass/main.sass';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-/*ReactDOM.render(
-  <Provider store={createStore(reducers, {})}>
+//ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Root>
     <App />
-  </Provider>,
+  </Root>,
   document.getElementById('root')
-);*/
+);
