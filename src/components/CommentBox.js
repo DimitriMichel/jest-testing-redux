@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../redux/actions'
+import * as actions from '../redux/actions';
+import { saveComment } from '../redux/actions';
 import '../sass/main.sass';
 
 class CommentBox extends Component {
@@ -17,6 +18,7 @@ class CommentBox extends Component {
   onEnterPress = (event) => {
     if (event.keyCode === 13 && event.shiftKey === false) {
       event.preventDefault();
+      this.props.saveComment(this.state.comment);
       this.setState({ comment: '' });
     }
   };
