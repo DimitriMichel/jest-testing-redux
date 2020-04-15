@@ -1,4 +1,4 @@
-import { SAVE_COMMENT } from '../actions/types';
+import { SAVE_COMMENT} from '../actions/types';
 
 export default function (state = [], action) {
   switch (action.type) {
@@ -8,3 +8,4 @@ export default function (state = [], action) {
       return state;
   }
 }
+
