@@ -8,9 +8,13 @@ export const saveComment = (comment) => {
 };
 
 export const fetchComments = () => {
-  const response = fetch('http://jsonplaceholder.typicode.com/comments');
-  return{
+  const response = fetch('http://jsonplaceholder.typicode.com/comments')
+    .then((response) => response.json())
+    .then((data) => {
+      return data;
+    });
+  return {
     type: FETCH_COMMENTS,
-    payload: response
-  }
+    payload: response,
+  };
 };
