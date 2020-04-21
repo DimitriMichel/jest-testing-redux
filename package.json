@@ -10,6 +10,7 @@
     "cheerio": "^1.0.0-rc.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "jest-fetch-mock": "^3.0.3",
     "node-sass": "^4.13.1",
     "prettier": "^2.0.2",
     "react": "0.0.0-experimental-aae83a4b9",
