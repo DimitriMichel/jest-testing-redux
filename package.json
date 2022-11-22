@@ -16,7 +16,7 @@
     "react": "0.0.0-experimental-aae83a4b9",
     "react-dom": "0.0.0-experimental-aae83a4b9",
     "react-redux": "^7.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.5",
     "redux-promise": "^0.6.0"
   },
